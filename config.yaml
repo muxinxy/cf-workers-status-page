@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://status.bush.eu.org' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -15,25 +15,97 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: muxinxy-homepage # unique identifier
+    name: muxinxy.com
+    description: 'Muxinxy Homepage' # default=empty
+    url: 'https://muxinxy.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    linkable: true # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: muxinxy-blog
+    name: blog.muxinxy.com
+    description: 'Muxinxy Blog'
+    url: 'https://blog.muxinxy.com'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: ai-chat
+    name: AI Chat
+    url: 'https://lines.zeabur.app/chat'
+    method: GET
+    expectStatus: 200
+
+  - id: google-mirrors
+    name: Google Mirrors
+    url: 'https://lines.zeabur.app/google'
+    method: GET
+    expectStatus: 200
+    
+  - id: yesplay-music
+    name: Yesplay Music
+    url: 'https://y.mxyz.tk'
+    method: GET
+    expectStatus: 200
+
+  - id: muxin-movies
+    name: MuXin Movies Release Page
+    url: 'https://url.zeabur.app'
+    method: GET
+    expectStatus: 200
+
+  - id: openai-api
+    name: OpenAI API Proxy URL
+    url: 'https://openai-api.mxyz.tk'
+    method: GET
+    expectStatus: 200
+
+  - id: onedrive-list
+    name: OneDrive List
+    url: 'https://o.mxyz.tk'
+    method: GET
+    expectStatus: 200
+
+  - id: openai-api
+    name: OpenAI API Proxy URL
+    url: 'https://openai-api.mxyz.tk'
+    method: GET
+    expectStatus: 200
+
+  - id: github-proxy
+    name: Github Files Proxy
+    url: 'https://gh.mxyz.tk'
+    method: GET
+    expectStatus: 200
+
+  - id: docker-proxy
+    name: Docker Registry Proxy
+    url: 'https://docker.999875.xyz'
+    method: GET
+    expectStatus: 200
+
+  - id: alist
+    name: AList
+    url: 'https://a.mxyz.tk'
+    method: GET
+    expectStatus: 200
+
+  - id: telegraph-image
+    name: Telegraph Image
+    url: 'https://img.bush.eu.org'
+    method: GET
+    expectStatus: 200
+
+  - id: yourls
+    name: Yourls Short URL
+    url: 'https://mxyz.tk'
+    method: GET
+    expectStatus: 200
+
+  - id: myapi
+    name: Chat API
+    url: 'https://myapi.999875.xyz'
     method: GET
     expectStatus: 200
