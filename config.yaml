@@ -17,8 +17,8 @@ settings:
 monitors:
   - id: muxinxy-homepage # unique identifier
     name: muxinxy.com
-    description: 'Muxinxy Homepage' # default=empty
-    url: 'https://muxinxy.com/' # URL to fetch
+    description: 'MuXinXY Homepage' # default=empty
+    url: 'https://www.muxinxy.com' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -26,7 +26,7 @@ monitors:
 
   - id: muxinxy-blog
     name: blog.muxinxy.com
-    description: 'Muxinxy Blog'
+    description: 'MuXinXY Blog'
     url: 'https://blog.muxinxy.com'
     method: GET
     expectStatus: 200
@@ -59,18 +59,12 @@ monitors:
   - id: openai-api
     name: OpenAI API Proxy URL
     url: 'https://openai-api.mxyz.tk'
-    method: GET
+    method: POST
     expectStatus: 200
 
   - id: onedrive-list
     name: OneDrive List
     url: 'https://o.mxyz.tk'
-    method: GET
-    expectStatus: 200
-
-  - id: openai-api
-    name: OpenAI API Proxy URL
-    url: 'https://openai-api.mxyz.tk'
     method: GET
     expectStatus: 200
 
@@ -83,7 +77,7 @@ monitors:
   - id: docker-proxy
     name: Docker Registry Proxy
     url: 'https://docker.999875.xyz'
-    method: GET
+    method: POST
     expectStatus: 200
 
   - id: alist
