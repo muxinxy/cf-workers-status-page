@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status.bush.eu.org' # used for Slack messages
+  url: 'https://status.mxy.cloudns.org' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -81,7 +81,7 @@ monitors:
 
   - id: telegraph-image
     name: Telegraph Image
-    url: 'https://img.bush.eu.org'
+    url: 'https://img.mxy.cloudns.org'
     method: GET
     expectStatus: 200
 
