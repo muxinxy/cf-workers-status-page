@@ -81,7 +81,7 @@ monitors:
 
   - id: telegraph-image
     name: Telegraph Image
-    url: 'https://img.mxy.cloudns.org'
+    url: 'https://img.mxy.hz.cz'
     method: GET
     expectStatus: 200
 
