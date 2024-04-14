@@ -18,7 +18,7 @@ monitors:
   - id: muxinxy-homepage # unique identifier
     name: muxinxy.com
     description: 'Homepage' # default=empty
-    url: 'https://muxinxy.com' # URL to fetch
+    url: 'https://www.muxinxy.com' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
