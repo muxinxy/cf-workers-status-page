@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status.mxy.cloudns.org' # used for Slack messages
+  url: 'https://status.mxyz.tk' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -26,6 +26,7 @@ monitors:
 
   - id: muxinxy-blog
     name: blog.muxinxy.com
+    description: 'Blog' # default=empty
     url: 'https://blog.muxinxy.com'
     method: GET
     expectStatus: 200
@@ -50,13 +51,13 @@ monitors:
     expectStatus: 200
 
   - id: muxin-movies
-    name: MuXin Movies Release Page
+    name: Movies & Series Website Release Page
     url: 'https://url.zeabur.app'
     method: GET
     expectStatus: 200
 
   - id: muxinxy-nav
-    name: muxinxy navigation
+    name: OneNav Website Navigation
     url: 'https://nav.muxinxy.com'
     method: GET
     expectStatus: 200
@@ -72,6 +73,7 @@ monitors:
     url: 'https://gh.mxyz.tk'
     method: GET
     expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
 
   - id: alist
     name: AList
@@ -80,19 +82,36 @@ monitors:
     expectStatus: 200
 
   - id: telegraph-image
-    name: Telegraph Image
+    name: Telegraph Image Bed
     url: 'https://img.mxy.hz.cz'
     method: GET
     expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
 
   - id: yourls
     name: Yourls Short URL
     url: 'https://mxyz.tk'
     method: GET
     expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
 
   - id: myapi
-    name: Chat API
+    name: AI API
     url: 'https://myapi.999875.xyz'
     method: GET
     expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+
+  - id: openwebui
+    name: OpenWebUI
+    url: 'https://open-webui.mxyz.tk'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
+
+  - id: xiaoya
+    name: Xiaoya AList
+    url: 'https://xy.mxyz.tk'
+    method: GET
+    expectStatus: 200
+    linkable: false # allows the title to be a link, default=true
